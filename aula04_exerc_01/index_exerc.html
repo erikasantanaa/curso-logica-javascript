@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 01</title>
+</head>
+<body>
+    
+    <h1>Exercicio 01</h1>
+
+    <!--
+        1. Pedir para o usuario digitar um numero
+        2.Converter em numero inteiro
+        3.Pedir para o usuario digitar outro numero
+        4.Converter em numero inteiro
+
+        5.Mostrar a subtração concatenando com o texto "a subtração é: ..."
+        6. Mostrar a multiplicação concatenando com o texto "a multiplicação é: "
+
+        7.Mostrar a divisão concatenando com o texto "a divisão é: ..."
+        8. Mostrar a soma concatenando  com  o texto "a soma é: ..."
+    -->
+    
+    <script>
+
+        var n1 = prompt("Digite um número: ");
+        n1 = parseInt(n1);
+
+        var n2 = prompt("Digite outro número: ");
+        n2 = parseInt(n2);
+
+        alert(`
+            A subtração é ${n1 - n2};
+            A Multiplicação é ${n1 * n2};
+            A divisão é ${n1 / n2};
+            A Soma é ${n1 + n2}
+            `);
+
+
+
+    </script>
+
+</body>
+</html>

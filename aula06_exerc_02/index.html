@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio de operadores aritmeticos</title>
+</head>
+<body>
+    
+    <h1>Lógica de programação com JS</h1>
+
+
+    <!--
+        1. Pedir para o usuario digitar um numero
+        2.converter esse numero inteiro
+        3.Pedir para o usuario digitar outro numero
+        4.converter esse numero para inteiro
+
+        5.Mostrar num alert alert o seguinte texto: o resto da divisão de
+        (n1)  por (n2) é: (resultado); 
+        
+        6.Mostrar num alert o seguinte texto: O numero (n1) 
+        elevado a (n2) é : (resultado);      
+
+    -->
+
+    <script>
+        var numero1 = prompt("Digite um número: ");
+        numero1 = parseInt(numero1);
+
+        var numero2 = prompt("Digite outro numero: ");
+        numero2 = parseInt(numero2);
+
+        alert(`O resto da Divisão ${numero1} por ${numero2} é: ${numero1 % numero2}. É, o número ${numero1} elevado  ${numero2} é: ${numero1 ** numero2}`);     
+
+  
+    </script>
+
+</body>
+</html>
