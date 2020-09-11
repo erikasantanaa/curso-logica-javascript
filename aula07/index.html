@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores de comparação</title>
+</head>
+<body>
+    <!--
+    OBS: = Operador de atribuição, é não de comparação
+
+        == Igualdade (valor)
+        != Diferente (valor)
+        === Igualdade (valor e tipo) (sempre usar)
+        !== Diferente (valor e tipo)
+        > Maior 
+        >= Maior ou igual
+        < Menor
+        <= Menor ou igual
+    -->
+
+    <h1>Operadores de Comparação</h1>
+
+    <script>
+
+        var numero1 = prompt("Digite um numero: ");
+        numero1 = parseFloat(numero1);
+
+        var numero2 = prompt("Digite outro número: ");
+        numero2 = parseFloat(numero2);
+
+        this.teste();
+
+
+        function teste(){
+
+            var resolvido = (this.numero1 + this.numero2) / 2;
+            
+            // alert(`O resultado da media é: ${resolvido} `);
+
+            alert(`A media ${resolvido} é maior que 5?  ${resolvido >= 5} `) ;
+        }
+
+
+    </script>
+
+
+</body>
+</html>

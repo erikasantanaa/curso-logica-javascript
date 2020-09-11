@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionais</title>
+</head>
+<body>
+    
+<script>
+    /*Pedir para o usuário digitar dois números 
+    e mostrar uma mensagem informando se foi aprovado
+    ou não. A nota de corte é 5.
+    */
+
+    var nota1 = parseFloat(prompt("Digite sua primeira nota: "));
+
+
+    var nota2 = parseFloat(prompt("Digite sua segunda nota: "));
+
+    this.resultado();
+
+    function resultado(){
+
+        var media = (this.nota1 + this.nota2) / 2;
+
+
+        if (media > 6){
+            alert(` A media de sua nota é: ${media} Parabéns! Você foi aprovado! :) `);
+        } else{
+            alert(` A media de sua nota é: ${media} Desculpe, mas não foi dessa vez! :( `);
+        }
+
+    };
+
+</script>
+
+
+</body>
+</html>
