@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 03</title>
+</head>
+<body>
+    <h1>Exercicio 03</h1>
+
+    <script>
+    //Math.random() retorna um numero sorteio.
+    // parseInt(Math.random() * 2) retorna numero inteiro ().
+ 
+    
+    //1. Fazer jogador1 digitar um numero
+        var nJogador1 = parseInt(prompt("Número do Jogador 1: "));
+    //2. fazer jogador2 digitar outro numero
+        var nJogador2 = parseInt(prompt("Número do Jogador 2 : "));
+
+    //3. Se forem iguais, mostrar mensagem 'empate'
+        if(nJogador1 === nJogador2) {
+
+            alert("Vocês empataram");
+
+        } else {
+    //4. Sortear um numero entre 0 e 1
+            var nSorteado = parseInt(Math.random() * 2)
+    //5. Se o numero sorteado for 0, ganha quem escolher o numero MENOR
+            if(nSorteado === 0) {
+
+                if(nJogador1 < nJogador2){
+
+                    alert("Ganhou o Jogador 1");
+
+                } else {
+
+                    alert("Ganhou o Jogador 2");
+                }
+
+            } else {
+    //6.Se o numero sorteado for 1, ganha quem escolher o numero MAIOR
+                if(nJogador1 > nJogador2) {
+                    
+                    alert("Ganhou o Jogador 1");
+
+                } else {
+                    alert ("Ganhou o jogador 2");
+                }
+            }
+        }
+
+    </script>
+</body>
+</html>
