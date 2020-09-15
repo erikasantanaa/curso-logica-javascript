@@ -8,8 +8,49 @@
 <body>
     <h1>Operadores Logicos</h1>
 
-    <script>
+    <p>
+        ! Não(not)<br>
+        && E(and)<br>
+        || Ou(or)
+
+    </p>
+
+
+    <!--
+        se nota1 > 0 && nota2 > 0 && media > 5
+
+            Mostra mensagem de Parabéns
         
+        senão
+
+            Mostra mensagem de reprovação
+
+    -->
+
+    <script>
+                /*1.Pedir para o usuário digitar dois números
+        2.Mostrar uma mensagem informando se foi aprovado ou não.
+        3.A nota de corte é 5.
+        4.Contudo, se qualquer uma das notas for zero, reprova automaticamente. */
+
+
+        let nota1 = parseFloat(prompt("Digite a primeira nota: "));
+
+        let nota2 = parseFloat(prompt("Digite a segunda nota: "));
+
+        let media = (nota1 + nota2) / 2;
+
+        // if (nota1 > 0 && nota2 > 0 && media > 5) {
+        //     alert("Parabéns, voce foi aprovado!");
+        // } else {
+        //     alert("Desculpe, mas não foi dessa vez!");
+        // }
+
+        if (nota1 === 0 || nota2 === 0 || media <=5){
+            alert("Desculpe, mas não foi dessa vez!");
+        } else {
+            alert("Parabéns, voce foi aprovado!");
+        }
 
 
     </script>
