@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionais - switch</title>
+</head>
+<body>
+    
+<h1> Condicionais switch</h1>
+<h2>
+    Pedir para o usuário digitar um número de 1 a 3.
+    Mostrar na tela uma mensagem diferente para cada número. 
+</h2>
+
+<!--
+    Controle de decisão
+
+    sobre número
+    caso seja 1:
+        mostrar mensagem
+    caso seja 2:
+        mostrar mensagem
+    caso seja 3:
+        mostrar mensagem
+        ....
+-->
+
+<script>
+
+    let n = parseInt(prompt('Digite um número: '));
+
+    switch(n){
+        case 1:
+            alert('Seja o que Deus quiser!');
+            break;
+        case 2:
+            alert('Não desista!');
+            break;
+        case 3:
+            alert('Você consegue!');
+            break;
+        default:        //O default não precisa do break.
+            alert('Escolha de 1 a 3');
+
+    }
+
+
+
+
+</script>
+
+</body>
+</html>
