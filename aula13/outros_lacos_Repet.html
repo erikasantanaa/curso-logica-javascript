@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laços de Repetição</title>
+</head>
+<body>
+
+    <h1>Mostrar a Tabuada do número digitado 1000 vezes</h1>
+    <!--
+        PROBLEMA:
+        Pedir para o usuário digitar um número e mostrar a tabuada 
+        desse número de 1 a 1000.
+    -->
+
+    <script>
+
+        /* Para que o bloco seja executado uma vez, se usa o: do / while. 
+
+        let numero = parseFloat(prompt('Digite um número: '));
+
+        let indice = 1001;
+                
+        do {
+            document.write(`${numero} x ${indice} = ${numero * indice} <br>`);
+
+            indice = indice + 1;
+        } while(indice <= 1000);
+
+        document.write('Saiu do loop!');  */
+
+        //Geralmente se usa o for e o while.
+
+        var numero = parseFloat(prompt('Digite um número: '));
+
+        for(var indice = 1; indice <= 1000; indice++) {
+            document.write(`${numero} x ${indice} = ${numero * indice} <br>`);
+        } 
+    
+        document.write('Saiu do loop!');  
+
+
+
+
+    </script>
+
+
+</body>
+</html>
