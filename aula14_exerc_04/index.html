@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <h1>Mostrar a Tabuada do número digitado 1000 vezes</h1>
+    <!--
+        PROBLEMA:
+        Pedir para o usuário digitar um número e mostrar a tabuada 
+        desse número de 1 a 1000.
+    -->
+
+    <script>
+        let numero = parseFloat(prompt('Digite um número: '));
+
+        let indice = 1;
+
+        //repita até que indice seja <= 1000 (true)
+        //OBS: Nunca se esqueça, que dentro do loop a condição true, tem que retornar false.
+        while (indice <= 1000) {
+            //não usar o write para programar
+            document.write(`${numero} x ${indice} = ${numero * indice} <br>`);
+            
+            if (indice % 10 === 0) {
+                document.write('<hr>')
+            }
+            
+            indice = indice + 1;
+
+
+        }
+        //False
+        document.write('Saiu do loop!');     
+    </script>
+
+
+</body>
+
+</html>
