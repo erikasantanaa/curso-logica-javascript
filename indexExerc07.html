@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Lógica de programação com Javascript</h1>
+    <h2>Calculadora simpleeees!</h2>
+
+    <button onclick="somar()">+</button>
+    <button onclick="subtrair()">-</button>
+    <button onclick="multiplicar()">*</button>
+    <button onclick="dividir()">/</button>
+
+    <!--output = Resultado-->
+    <div id="output"></div>
+
+
+    <script>
+
+        var n1 = parseFloat(prompt('digite um numero'));
+
+        escrever();
+
+        //função para que não permita a div ficar pedindo o numero novamente.
+        function escrever(){
+            let output = document.querySelector('#output');
+            output.innerHTML = n1;
+        }
+
+        function somar(){
+            let n = parseFloat(prompt('Digite outro número'));
+
+            n1 += n;
+            escrever();
+        }
+
+        function subtrair(){
+            let n = parseFloat(prompt('Digite outro número'));
+
+            n1 -= n;
+            escrever();
+        }
+
+        function multiplicar(){
+            let n = parseFloat(prompt('Digite outro número'));
+
+            n1 *= n;
+            escrever();
+        }
+
+        function dividir(){
+            let n = parseFloat(prompt('Digite outro número'));
+
+            n1 /= n;
+            escrever();
+        }
+    </script>
+
+</body>
+</html>
