@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções que recebem Valores</title>
+</head>
+
+<body>
+    <h1>
+        Pedir para o usuário digitar dois números que representam
+        os lados de um retâgulo assim que a página é recarregada.
+        Mostrar na tela a área total quando clicar num botão.
+
+    </h1>
+    <hr>
+    <br>
+
+    <h3>Clique no botão para ver o resultado</h3>
+    <button onclick="mostrarArea(largura, altura)">Mostrar Área</button>
+
+    <hr>
+    <p>
+        Funções que recebem valores (mais conhecidos
+        como argumentos ou parâmetros)
+        são úteis para reaproveitar ainda mais seus códigos.
+    </p>
+    <script>
+        let largura = parseFloat(prompt('Digite a largura: '));
+
+        let altura = parseFloat(prompt('Digite a altura: '));
+        
+        //Função vai fazer a multiplicação da largura e da altura.
+        function mostrarArea(l, a){
+
+            alert(`Área total: ${l * a}`)
+
+        }
+
+    </script>
+</body>
+
+</html>
