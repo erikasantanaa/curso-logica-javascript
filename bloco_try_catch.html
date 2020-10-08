@@ -6,16 +6,72 @@
     <title> Bloco Try... Catch(erro)</title>
 </head>
 <body>
+
+    <h1>O try consegue recuperar erros que possam ocorrer no código fornecido em seu bloco.
+        O catch por sua vez faz o tratamento dos erros que aconteceram.</h1>
+
+
     <!--
         Pedir para o usuario digitar dois numeros que representam
-        os lados de um retangulo. Mostrar na tela a area total.
+        os lados de um retangulo. 
+        Mostrar na tela a area total.
         Esse codigo deve ser executado quando a pagina é aberta 
-        e tambem quando clicar num botao. O que acontece se o 
-        usuario inserir um dado invalido?
+        e tambem quando clicar num botao. 
+        O que acontece se o usuario inserir um dado invalido?
     -->   
 
+    <button onclick="mostrarAreaAlert()">Mostrar area num Alert</button>
+    <button onclick="mostrarAreaOutput()">Mostrar area no output</button>
+
+    <div id="output"></div>
 
     <script>
+
+        //button alert
+        function mostrarAreaAlert() {
+            let largura = parseFloat(prompt('Digite a largura: '));
+            let altura = parseFloat(prompt('Digite a altura: '));
+
+            try{
+                let area = calcularArea(largura, altura);
+            } catch(e){
+                area = e;                
+            }
+
+            alert(`A área total é: ${area}`)
+        }
+
+        //button output
+        function mostrarAreaOutput() {
+            let largura = parseFloat(prompt('Digite a largura: '));
+            let altura = parseFloat(prompt('Digite a altura: '));
+
+            try{
+                let area = calcularArea(largura, altura);
+            } catch(e){
+                area = e;                
+            }
+            
+            document.querySelector('#output').innerHTML = `A área total é: ${area}`;
+        }
+        //é o que eu quero agora
+        mostrarAreaAlert();
+
+        //Função vai fazer a multiplicação da largura e da altura
+        function calcularArea(l, a) {
+            if (l === undefined || a === undefined){
+                throw new Error('CalcularArea precisa receber dois números');
+            }
+
+            //se l ou a não forem convertidos para numero, dispara o Error no console.
+            if (isNaN(l) || isNaN(a) ){
+                throw new Error('Apenas números')
+            }
+
+            return l * a;
+        }
+
+
 
     </script>
 </body>

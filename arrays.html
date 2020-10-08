@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array com loop</title>
+</head>
+<body>
+
+    <!--Arrays: Conjuntos de dados agrupados entre [] -->
+    
+    <p>
+        Mostrar na tela todos os produtos disponíveis para compra.
+        Os nomes dos produtos estão agrupados num array.
+    </p>
+
+    <h1>Produtos para compra</h1>
+
+    <div id="output"></div>
+
+    <script>
+
+        const produtos = new Array('caneta', 'lapis', 'borracha', 'tesoura', 'caderno', 'livro');
+
+        produtos.push('compasso', 'cartolina');
+        const output = document.querySelector('#output');
+
+        //produtos.length: faz adicionar mais itens no loop.
+        var msg = '';
+        for (let i = 0; i < produtos.length; i++){
+            msg += `Produto ${i + 1}: ${produtos[i]} <br> `
+
+            // msg += 'produto' + (i + 1) + 'caneta <br>';
+        }
+
+        output.innerHTML = msg;
+    </script>
+
+</body>
+</html>

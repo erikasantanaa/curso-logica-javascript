@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conjunto de Dados - Objetos</title>
+</head>
+<body>
+
+    <h3>
+        Mostrar na tela todos os dados de um produto específico,
+        contendo nome, quantidade em estoque e preço. 
+        Estes dados estarão agrupados em um objeto.
+    </h3>
+
+    <p>OBJETOS são conjunto de dados agrupados entre {}</p>
+    <!--Função dentro de um objeto , é um metodo.
+        O this é o proprio objeto.
+    -->
+    
+    <div id="output"></div>
+
+    <script>
+
+        //para mostrar dados;
+        let produto1 = new Object();
+        produto1.nome = 'Caneta';
+        produto1.preco = 2.2;
+        produto1.estoque = 10;
+
+        //metodo , adc uma função:
+        produto1.comprar = function(qtd){
+            if (!qtd){
+                qtd = 1;
+            }
+            console.log('Comprou Caneta');
+            // this.estoque;
+            this.estoque = this.estoque - qtd;
+            console.log(this.estoque);        }
+
+        let msg = '';
+
+        msg += `Nome: ${produto1.nome} <br>`;
+        msg += `Preço: ${produto1.preco} <br>`;
+        msg += `Estoque: ${produto1.estoque}`;
+
+        document.querySelector('#output').innerHTML = msg;
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+
+<body>
+    <h3>Mostrar a soma dos numeros pares</h3>
+
+    <div id="output"></div>
+
+    <script>
+
+        let numeros = new Array(1, 2, 3, 5, 2);
+
+
+        let resultSoma = somarPares(numeros);        
+        document.querySelector('#output').innerHTML = 
+            `A soma dos numeros pares é: ${resultSoma}`;
+            
+
+        function somarPares(arr) {
+            let soma = 0;
+            // length: faz adicionar mais itens no array
+            for (let i = 0; i < arr.length; i++) {
+
+                if (!isNaN(arr[i]) && arr[i] % 2 === 0) {
+                    soma += arr[i];
+                }
+            }
+
+            return soma;
+        }
+
+    </script>
+
+</body>
+
+</html>
