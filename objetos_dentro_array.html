@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos dentro de um Array</title>
+</head>
+
+<body>
+    <!--Para tratar uma grande quantidade de dados-->
+
+    <h1>Mostrar na tela os dados de produtos, contendo quantidade em
+        estoque e preço. Estes dados estarão agrupados em um array de Objetos.
+    </h1>
+
+    <p>ARRAY DE OBJETOS é um conjunto de dados ({}) dentro de um Array ([])</p>
+    <hr>
+
+    <div id="output"></div>
+
+    <script>
+
+        //Organizar dados:
+        let produtos = [
+            { 'nome': 'caneta', 'preco': 2 },
+            { 'nome': 'lapis', 'preco': 1.2 },
+            { 'nome': 'papel', 'preco': 0.5 }
+        ];
+
+        let msg = '';
+
+        for (let i = 0; i < produtos.length; i++) {
+            console.log(produtos[i].nome)
+
+            msg += `<h2>Produto: ${produtos[i].nome} </h2>`
+            msg += `<h2>Preço: ${produtos[i].preco} </h2>`
+        }
+
+        document.querySelector('#output').innerHTML = msg;
+
+    </script>
+
+</body>
+
+</html>
